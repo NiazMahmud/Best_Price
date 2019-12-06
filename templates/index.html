@@ -1,3 +1,8 @@
+
+{%  load static %}
+
+
+
 <!DOCTYPE html>
 
 <head>
@@ -7,36 +12,36 @@
 <title>BEST PRICE</title>
 <base  />
 <meta name="description" content="My Store" />
-<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
-<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
-<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<script src="{% static "css/catalog/view/javascript/jquery/jquery-2.1.1.min.js" %}"></script>
+<link href="{% static "css/catalog/view/javascript/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet" media="screen" />
+<script src="{% static "css/catalog/view/javascript/bootstrap/js/bootstrap.min.js" %}"></script>
+<link href="{% static "css/catalog/view/javascript/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Nunito:400,400i,300,500,600,700" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,400i,600,700" rel="stylesheet" type="text/css" />
-<link href="catalog/view/theme/stylesheet/stylesheet.css" rel="stylesheet">
-<link href="catalog/view/theme/stylesheet/bootstrap.min.css" rel="stylesheet">
-<link href="catalog/view/theme/stylesheet/jquery.fancybox.css" rel="stylesheet">
-<link href="catalog/view/theme/stylesheet/animate.css" rel="stylesheet">
-<link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-<link href="catalog/view/theme/stylesheet/live_search.css" rel="stylesheet" type="text/css" />
+<link href="{% static "css/catalog/view/theme/stylesheet/stylesheet.css" %}" rel="stylesheet">
+<link href="{% static "css/catalog/view/theme/stylesheet/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "css/catalog/view/theme/stylesheet/jquery.fancybox.css" %}" rel="stylesheet">
+<link href="{% static "css/catalog/view/theme/stylesheet/animate.css" %}" rel="stylesheet">
+<link href="{% static "css/catalog/view/javascript/jquery/owl-carousel/owl.carousel.css" %}" rel="stylesheet" type="text/css" />
+<link href="{% static "css/catalog/view/theme/stylesheet/live_search.css" %}c" rel="stylesheet" type="text/css" />
 
 
-<link href="catalog/view/javascript/jquery/swiper/css/swiper.min.css" rel="stylesheet" media="screen" />
-<link href="catalog/view/javascript/jquery/swiper/css/opencart.css" rel="stylesheet" media="screen" />
-<script src="catalog/view/javascript/jquery/swiper/js/swiper.jquery.js"></script>
-<script src="catalog/view/javascript/common.js"></script>
-<script src="catalog/view/javascript/jquery.elevatezoom.min.js"></script>
-<script src="catalog/view/javascript/template_js/jstree.min.js"></script>
-<script src="catalog/view/javascript/tabs.js"></script>
-<script src="catalog/view/javascript/template_js/template.js"></script>
-<script src="catalog/view/javascript/template_js/jquery.firstVisitPopup.js"></script>
-<script src="catalog/view/javascript/template_js/simpleswap.js"></script>
-<script src="catalog/view/javascript/jquery.fancybox.js"></script>
-<script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.js"></script>
-<script src="catalog/view/javascript/template_js/wow.min.js"></script>
+<link href="{% static "css/catalog/view/javascript/jquery/swiper/css/swiper.min.css" %}" rel="stylesheet" media="screen" />
+<link href="{% static "css/catalog/view/javascript/jquery/swiper/css/opencart.css" %}" rel="stylesheet" media="screen" />
+<script src="{% static "css/catalog/view/javascript/jquery/swiper/js/swiper.jquery.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/common.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/jquery.elevatezoom.min.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/template_js/jstree.min.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/tabs.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/template_js/template.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/template_js/jquery.firstVisitPopup.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/template_js/simpleswap.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/jquery.fancybox.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/jquery/owl-carousel/owl.carousel.js" %}"></script>
+<script src="{% static "css/catalog/view/javascript/template_js/wow.min.js" %}"></script>
 
 
-<link href="image/catalog/cart.png" rel="icon" />
+<link href="{% static "css/image/catalog/cart.png" %}" rel="icon" />
 </head>
 
 <body class="common-home lang_en layout-1">
@@ -72,14 +77,14 @@
 <div class="header-bottom-block col-sm-12">
   <div class="header-bottom-left col-xs-6 col-sm-2 col-md-2 col-lg-2">
     <div class="header-logo">
-    <div id="logo"><a href="index.html?route=common/home"><img src="image/catalog/logo.png" title="BEST PRICE" alt="BEST PRICE " class="img-responsive" /></a></div>
+    <div id="logo"><a href="index.html?route=common/home"><img src="{% static "css/image/catalog/logo.png" %}" title="BEST PRICE" alt="BEST PRICE " class="img-responsive" /></a></div>
     </div>
   </div>
   <div class="header-bottom-right col-xs-6 col-sm-10 col-md-10 col-lg-10">
     <div class="header-cart"><div id="cart" class="btn-group btn-block cart_block">
    <button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="btn btn-inverse btn-block btn-lg dropdown-toggle"><span class="cart-text">My basket</span><span class="cart-total">Item 0</span><span class="cart-total-res">0</span>
   </button>
-  <a href="addtocart.html?route=checkout/cart" class="addtocart btn">
+  <a href="{% static "templates/addtocart.html?route=checkout/cart" %}" class="addtocart btn">
 <span class="cart-text">My basket</span>
 <span class="cart-total-res">0</span>
 </a>
@@ -90,19 +95,10 @@
       </ul>
 </div>
 </div>
-    <div class="header-link-search">
-    <div class="header-search"><div class="actions">
-    <button type="submit" title="Search" class="action search"  id="head-search"></button>
-</div>
-<div id="search" class="input-group">
-  <input type="text" id="search-input" name="search" value="" placeholder="Search" class="form-control input-lg" />
-  <span class="input-group-btn">
-    <button type="button" class="btn btn-default btn-lg">Search</button>
-  </span>
-</div></div>
 
 
-      </div>
+
+
     <div class="header-menu">
     <div class="responsive-menubar-block">
       <span>Shop By<br/> Category</span>
@@ -155,7 +151,7 @@
 <div id="spinner"></div>
 <div class="swiper-viewport">
   <div id="slideshow0" class="swiper-container">
-    <div class="swiper-wrapper">       <div class="swiper-slide text-center"><a href="index.html?route=product/product&amp;path=57&amp;product_id=49"><img src="image/cache/catalog/main-banner2-1920x602.jpg" alt="iPhone 6 " class="img-responsive" /></a></div>
+    <div class="swiper-wrapper">       <div class="swiper-slide text-center"><a href="index.html?route=product/product&amp;path=57&amp;product_id=49"><img src="{% static "css/image/cache/catalog/main-banner2-1920x602.jpg" %}" alt="banner " class="img-responsive" /></a></div>
        </div>
 
   </div>
@@ -187,6 +183,35 @@ $('#slideshow0').swiper({
 	  $("#spinner").fadeOut("slow");
 	});
 </script>
+
+     <!-- search -->
+ {% block content %}
+
+<div class="container">
+  <div class="row">
+     <div id="content" class="col-sm-12"><div class="breadcrumb"></div>
+
+  <div class="shipping-outer  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+    <form action="{% url 'new_search' %}" method="post">
+        {% csrf_token %}
+
+<div id="search" class="input-group">
+  <input type="text" id="search-input" name="search" value="" placeholder="Search" class="form-control input-lg" />
+  <span class="input-group-btn">
+    <button type="submit" class="btn btn-default btn-lg">Search</button>
+  </span>
+</div>
+
+</div>
+    </form>
+
+
+
+{% endblock content  %}
+
+
+
+
 
 <div class="container">
   <div class="row">
@@ -235,7 +260,7 @@ $('#slideshow0').swiper({
           <h4><b>Apples</b></h4>
 
         </div>
-        <div class="image"><img src="image/cache/catalog/apple.jpg" alt="Apple" title="Apple" class="img-responsive"/></a></div>
+        <div class="image"><img src="{% static "css/image/cache/catalog/apple.jpg" %}" alt="Apple" title="Apple" class="img-responsive"/></a></div>
         <div class="cms-desc">
         <div class="cms-text2">@ 150৳/Kg</div>
         <div class="cms-text3">Shop for ৳ 1000</div>
@@ -248,7 +273,7 @@ $('#slideshow0').swiper({
          <div class="caption categoryname">
           <h4><b>Onion</b></h4>
         </div>
-        <div class="image"><img src="image/cache/catalog/onion-local-1-kg.jpg" alt="Onion" title="Onion" class="img-responsive"/></a></div>
+        <div class="image"><img src="{% static "css/image/cache/catalog/onion-local-1-kg.jpg" %}" alt="Onion" title="Onion" class="img-responsive"/></a></div>
         <div class="cms-desc">
         <div class="cms-text2">@ 150৳/Kg</div>
         <div class="cms-text3">Shop for ৳ 1000</div>
@@ -261,7 +286,7 @@ $('#slideshow0').swiper({
          <div class="caption categoryname">
           <h4><b>Chicken</b></h4>
         </div>
-        <div class="image"><img src="image/cache/catalog/Chicken.jpg" alt="Chicken" title="Chicken" class="img-responsive"/></a></div>
+        <div class="image"><img src="{% static "css/image/cache/catalog/Chicken.jpg" %}" alt="Chicken" title="Chicken" class="img-responsive"/></a></div>
         <div class="cms-desc">
         <div class="cms-text2">@ 130৳/kg</div>
         <div class="cms-text3">Shop for ৳ 1000</div>
@@ -274,7 +299,7 @@ $('#slideshow0').swiper({
          <div class="caption categoryname">
           <h4><b>Potato</b></h4>
         </div>
-        <div class="image"><img src="image/cache/catalog/potato.jpg" alt="Potato" title="Potato" class="img-responsive"/></a></div>
+        <div class="image"><img src="{% static "css/image/cache/catalog/potato.jpg" %}" alt="Potato" title="Potato" class="img-responsive"/></a></div>
         <div class="cms-desc">
         <div class="cms-text2">@ 25৳/kg</div>
         <div class="cms-text3">Shop for ৳ 1000</div>
@@ -286,7 +311,7 @@ $('#slideshow0').swiper({
            <div class="caption categoryname">
             <h4><b>Moshur Dal</b></h4>
           </div>
-          <div class="image"><img src="image/cache/catalog/Moshur Dal.jpg" alt="Moshur Dal" title="Moshur Dal" class="img-responsive"/></a></div>
+          <div class="image"><img src="{% static "css/image/cache/catalog/Moshur Dal.jpg" %}" alt="Moshur Dal" title="Moshur Dal" class="img-responsive"/></a></div>
           <div class="cms-desc">
           <div class="cms-text2">@ 100৳/kg</div>
           <div class="cms-text3">Shop for ৳ 1000</div>
@@ -298,7 +323,7 @@ $('#slideshow0').swiper({
            <div class="caption categoryname">
             <h4><b>Strawberry</b></h4>
           </div>
-          <div class="image"><img src="image/cache/catalog/strawberry.jpg" alt="strawberry" title="strawberry" class="img-responsive"/></a></div>
+          <div class="image"><img src="{% static "css/image/cache/catalog/strawberry.jpg" %}" alt="strawberry" title="strawberry" class="img-responsive"/></a></div>
           <div class="cms-desc">
           <div class="cms-text2">@ 110৳/kg</div>
           <div class="cms-text3">Shop for ৳ 1000</div>
@@ -314,7 +339,7 @@ $('#slideshow0').swiper({
         <div class="footer_block">
        <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 column myaccount">
-      <!--    <h4>My Account</h4> -->
+   <!--    <h4>My Account</h4>  -->
           <h3 class="collapsed" data-target="#dropdown-account" data-toggle="collapse">My Account <span class="icon"></span></h3>
           <ul class="list-unstyled collapse" id="dropdown-account">
             <li><a href="MyAccount.html?route=account/account">My Account</a></li>
@@ -421,6 +446,7 @@ $('#slideshow0').swiper({
       </div>
     </div>
   </div>
+
 
 </body>
 
